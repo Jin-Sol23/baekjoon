@@ -90,3 +90,17 @@ if k not in c:
     print(0)
 else:
     print(c.index(k)+1)
+
+#%%
+# 블로그 풀이
+n, k = map(int, input().split())
+
+c = []
+for i in range(1, n+1):
+    if n % i == 0:
+        c.append(i)
+     
+if k > len(c):
+    print(0)
+else:
+    print(c[k-1])
