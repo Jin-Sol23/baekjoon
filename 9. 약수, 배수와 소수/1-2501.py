@@ -15,12 +15,16 @@ Created on Tue Dec 26 15:43:54 2023
 #%%
 # 망함
 a = 6
-b = 6
+k = 4
 c = []
-for i in range(1, b+1):
-    if a % b == 0:
+for i in range(1, a+1):
+    if a % i == 0:
         c.append(i)
-    print(c)
+    
+if k > len(c):
+    print(0)
+else:
+    print(c[k-1])
 
 #%%
 # 망함
