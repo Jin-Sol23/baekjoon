@@ -17,8 +17,8 @@ for j in range(97, 123):
         if s[i] == chr(j):
             # j = i
             found = True
-#            break
-    if not found:
+            break
+    if not found: # 위의 found가 False니까 not found면 True??
         i = -1
     print(i, end=' ')
 
@@ -41,7 +41,17 @@ for j in range(97, 123):
     #     i = -1
     # print(i, end=' ')
 
+#%%
+# flag 변수
+flag=True
+print(flag) # True
+print(type(flag)) # bool
 
+# flag=not flag
+if flag:
+    print("True 입니다.")
+else:
+    print("False 입니다.")
 
 
 
